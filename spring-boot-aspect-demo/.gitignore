@@ -1,22 +1,59 @@
+# project logs
+logs/
+out/
+
+# jrebel
+rebel.xml
+
+# maven ignore
+target/
+*.jar
+*.war
+*.ear
+*.zip
+*.tar
+*.tar.gz
+
+# eclipse ignore
+.settings/
+.project
+.classpath
+
+# idea ignore
+.idea/
+.vertx/*
+*target*
+.idea/*
+*.ipr
+*.iml
+.mvn
+*.iws
+
+# temp ignore
+*.log
+*.cache
+*.diff
+*.patch
+*.tmp
+
+# system ignore
+.DS_Store
+Thumbs.db
+
+
+# node_modules
+node_modules
+
+
+*.versionsBackup
+
 *.class
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
-# Package Files #
-*.jar
-*.war
-*.ear
-
-hs_err_pid*
-*.iml
-.idea/*
-target/*
-*target*
-cashier_core/.idea/*
-.project
-.classpath
-.settings
 bin/
 gen/
-usedemo/.idea/*
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
