@@ -8,6 +8,7 @@
 package com.sunyk.spring.cloud.feign.api.service;
 
 import com.sunyk.spring.cloud.feign.api.domain.Person;
+import com.sunyk.spring.cloud.feign.api.hystrix.PersonServiceFallback;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -22,7 +23,7 @@ import java.util.Collections;
  * @author sunyang
  * @date 2018/12/27 15:07
  */
-@FeignClient(value = "person-service")
+@FeignClient(value = "person-service", fallback = PersonServiceFallback.class)
 public interface PersonService {
 
     /**

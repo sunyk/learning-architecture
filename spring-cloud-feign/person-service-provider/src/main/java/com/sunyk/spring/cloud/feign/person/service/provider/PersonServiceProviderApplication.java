@@ -16,7 +16,7 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
  * @date 2018/12/27 15:52
  */
 @SpringBootApplication
-@EnableEurekaClient
+//@EnableEurekaClient
 public class PersonServiceProviderApplication {
     public static void main(String[] args) {
         SpringApplication.run(PersonServiceProviderApplication.class, args);

@@ -34,12 +34,14 @@ public class PersonServiceProviderController {
 
     @PostMapping(value = "/person/save")
     public boolean save(@RequestBody Person person){
+        System.out.println("save is here....");
         return persons.put(person.getId(), person) == null;
     }
 
 
     @GetMapping(value = "/person/find/all")
     public Collection<Person> findAll(){
+        System.out.println("persons is here....");
         return persons.values();
     }
 

@@ -34,5 +34,15 @@ public class PersonController {
         String info = person.toString();
         return info;
     }
+
+    @CrossOrigin(origins = "*", maxAge = 3600)
+    @GetMapping(value = "/geInterlInfo")
+    public String geInterlInfo() {
+        Person person = new Person();
+        person.setId(22L);
+        person.setUserName("sunyk");
+        String info = person.toString();
+        return info;
+    }
 }
 
